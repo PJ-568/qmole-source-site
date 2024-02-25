@@ -1,0 +1,35 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+    - name: Checkout qmole-source-site
+      uses: actions/checkout@v4
+      with:
+        path: qmole-source-site
+    
+    - name: Checkout qmole-packages
+      uses: actions/checkout@v4
+      with:
+        repository: chriskmanx/qmole-packages
+        path: qmole-packages
+
+    - name: Build site
+      run: |
+        cp -v qmole-source-site/index.html qmole-packages/REPO/index.html
+        cp -v qmole-source-site/CNAME qmole-packages/REPO/CNAME
+        touch ./test_log.txt
+        ls -R > ./test_log.txt
+
+    - name: test-Check
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-Files
+        path: ./test_log.txt

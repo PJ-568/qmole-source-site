@@ -1,0 +1,37 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+
+    - name: Checkout qmole-source-site
+      uses: actions/checkout@v4
+
+    - name: Mkdir & Mv
+      run: |
+        mkdir /home/runner/tmp
+        cp -v ./index.html /home/runner/tmp/index.html
+        cp -v ./CNAME /home/runner/tmp/CNAME
+
+    - name: Checkout qmole-packages
+      uses: actions/checkout@v4
+      with:
+        repository: chriskmanx/qmole-packages
+
+    - name: Build site
+      run: |
+        cp -v /home/runner/tmp/index.html REPO/index.html
+        cp -v /home/runner/tmp/CNAME REPO/CNAME
+        cp -v qmole.png REPO/qmole.png
+
+    - uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: ./REPO
