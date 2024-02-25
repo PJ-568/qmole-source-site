@@ -1,4 +1,6 @@
-<img style="padding:1rem;display:block;margin-left:auto;margin-right:auto;width:30%" src="https://qmole.pj568.eu.org/qmole.png" alt="QMole Logo" />
+<p align="center">
+    <img width="256" src="https://qmole.pj568.eu.org/qmole.png" alt="QMole Logo" />
+</p>
 <h1 align="center">QMole Software Repository | QMole 软件源</h1>
 <div style="padding:1rem">
     <p>Cydia: <code>https://qmole.pj568.eu.org/</code></p>
