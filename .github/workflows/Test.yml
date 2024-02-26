@@ -8,28 +8,40 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
-
     steps:
+
     - name: Checkout qmole-source-site
       uses: actions/checkout@v4
+
+    - name: Mkdir & Mv
+      run: |
+        mkdir /home/runner/tmp
+        cp -v ./index.html /home/runner/tmp/index.html
+        cp -v ./CNAME /home/runner/tmp/CNAME
+
+    - name: HTML/CSS/JS Minifier
+      uses: docker://devatherock/minify-js:3.0.0
       with:
-        path: qmole-source-site
-    
+        directory: '/home/runner/tmp/'
+        add_suffix: false
+
     - name: Checkout qmole-packages
       uses: actions/checkout@v4
       with:
         repository: chriskmanx/qmole-packages
-        path: qmole-packages
 
     - name: Build site
       run: |
-        cp -v qmole-source-site/index.html qmole-packages/REPO/index.html
-        cp -v qmole-source-site/CNAME qmole-packages/REPO/CNAME
-        touch ./test_log.txt
-        ls -R > ./test_log.txt
+        cp -v /home/runner/tmp/index.html REPO/index.html
+        cp -v /home/runner/tmp/CNAME REPO/CNAME
+        cp -v qmole.png REPO/qmole.png
+
+    # - uses: JamesIves/github-pages-deploy-action@v4
+    #   with:
+    #     folder: ./REPO
 
     - name: test-Check
       uses: actions/upload-artifact@v4
       with:
         name: test-Files
-        path: ./test_log.txt
+        path: ./REPO/index.html
