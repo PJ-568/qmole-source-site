@@ -6,6 +6,7 @@ on:
     branches:
       - '**'
     paths:
+      - '**'
       - '!**.md'
       - '!LICENSE'
       - '!.github\workflows\**'
