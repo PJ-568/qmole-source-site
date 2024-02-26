@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+h1 {
+    color: #333;
+    padding: 1rem;
+}
+ul {
+    list-style: none;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 1rem;
+}
+li:hover {
+    border: 1px solid #007bff;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #007bff;
+}
+.logo {
+    border: 1px solid #ddd;
+    display: block;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+.bg-img {
+    background-attachment:fixed;
+    background-image:url(https://bing.shangzhenyang.com/api/1080p);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+    height:100%;
+    left:0;
+    top:0;
+    opacity:.5;
+    position:fixed;
+    transform:scale(1.1);
+    width:100%;
+    z-index:-1
+}
+.container {
+    background-color: #eee;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.lb-lock {
+    padding: 1rem;
+}
+.fake-window {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.menu {
+    padding: 3px;
+    margin-top: 3px;
+    border-bottom: 1px solid #ddd;
+}
+.menu a {
+    color: #444;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 4px 0.5em;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #000;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    text-decoration: underline;
+}
+.menu a:visited {
+    color: #444;
+}
+.menu .current {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.menu .current:hover {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+.menu .current:visited {
+    color: #000;
+}
+.main-content {
+    padding: 1rem;
+}
+.about {
+    text-align: center;
+    font-size: small;
+    color: gray;
+}
+.about a{
+    color: gray;
+}
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    body {
+        padding: 0.5rem;
+    }
+    .menu a {
+        display: inline-block;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .menu .current {
+        border-bottom: 1px solid #ccc;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: .5em;
+        margin: 0;
+    }
+}
