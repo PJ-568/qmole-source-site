@@ -1,6 +1,7 @@
 name: Deployment
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - '**'
@@ -18,6 +19,11 @@ jobs:
 
     - name: Checkout qmole-source-site
       uses: actions/checkout@v4
+
+    - name: HTML/CSS/JS Minifier
+      uses: docker://devatherock/minify-js:3.0.0
+      with:
+        add_suffix: false
 
     - name: Mkdir & Mv
       run: |
@@ -43,6 +49,13 @@ jobs:
         cp -r -v /home/runner/tmp/js REPO/js
         cp -r -v /home/runner/tmp/css REPO/css
         cp -v qmole.png REPO/qmole.png
+
+    - name: Generate the sitemap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1
+      with:
+        path-to-root: ./REPO
+        base-url-path: https://qmole.pj568.eu.org/
 
     - uses: JamesIves/github-pages-deploy-action@v4
       with:

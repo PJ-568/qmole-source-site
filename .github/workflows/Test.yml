@@ -12,7 +12,6 @@ jobs:
 
     - name: Checkout qmole-source-site
       uses: actions/checkout@v4
-
     - name: HTML/CSS/JS Minifier
       uses: docker://devatherock/minify-js:3.0.0
       with:
@@ -42,6 +41,15 @@ jobs:
         cp -r -v /home/runner/tmp/js REPO/js
         cp -r -v /home/runner/tmp/css REPO/css
         cp -v qmole.png REPO/qmole.png
+        touch REPO/test.txt
+        ls -R > REPO/test.txt
+
+    - name: Generate the sitemap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1
+      with:
+        path-to-root: ./REPO
+        base-url-path: https://qmole.pj568.eu.org/
 
     # - uses: JamesIves/github-pages-deploy-action@v4
     #   with:
@@ -51,4 +59,9 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: test-Files
-        path: ./REPO/index.html
+        path: |
+          ./REPO/**.html
+          ./REPO/js/**.js
+          ./REPO/css/**.css
+          ./REPO/test.txt
+          ./REPO/**.xml
