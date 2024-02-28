@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="QMole Linux project brings linux to iOS.">
+    <meta name="description" content="How to fix QMole expiration date issue? 如何修复 QMole 到期问题？">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>QMole Linux</title>
+    <title>Fixing Issues | 修复问题</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="//lib.baomitu.com/pjax/0.2.8/pjax.min.js" type="text/javascript"></script>
     <script src="js/SetPjax.js" type="text/javascript"></script>
@@ -13,29 +13,24 @@
 <body>
     <img id="bg-img" class="bg-img" src="https://bing.shangzhenyang.com/api/1080p" alt="Bing Wallpaper" loading="lazy">
     <div class="container">
-        <div class="logo-container"><img class="logo" src="qmole.png" alt="QMole Logo" /></div>
-        <h1 class="pjax-reload">QMole Linux</h1>
+        <div class="logo-container"><img class="logo" src="qmole.png" alt="QMole Logo"/></div>
+        <h1 class="pjax-reload">Fix QMole expiration date issue | 修复 QMole 到期问题</h1>
         <div class="lb-lock">
             <div class="fake-window pjax-reload">
-                <div class="menu ">
-                    <a class="current" title="QMole Linux" href=".">Home | 主页</a>
+                <div class="menu">
+                    <a title="QMole Linux" href=".">Home | 主页</a>
                     <a title="QMole Linux installation guide | QMole Linux 安装教程" href="Installation.html">Installation | 安装教程</a>
-                    <a title="Fixing Issues | 修复问题" href="Fix.html">Fixing Issues | 修复问题</a>
+                    <a class="current" title="Fixing Issues | 修复问题" href="Fix.html">Fixing Issues | 修复问题</a>
                     <a title="QMole Linux Desktop Manual Introduction | QMole Linux 桌面使用手册" href="https://chriskohlhepp.wordpress.com/qmole-linux-desktop-for-ios-manual/">Manual | 用法指南</a>
                     <a title="What is QMole Software Repository | QMole 软件源是什么" href="About.html">About | 关于</a>
                 </div>
-                <div class="main-content ">
-                    <h3>What is QMole Linux | QMole Linux 是什么</h3>
-                    <p>QMole Linux allows iPhones and iPads run Linux desktop and apps.</p>
-                    <p>QMole Linux 赋予 iPhone 和 iPad 运行 Linux 桌面环境和应用程序的能力。</p>
+                <div class="main-content">
+                    <p>Greatly thanks to <a href="https://github.com/GlitchedGoat"><img width="32" src="https://avatars.githubusercontent.com/u/58455756?s=32"/>@GlitchedGoat</a> for the experiment <a href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444" target="_blank">instructions</a>.</p>
+                    <p>隆重感谢 <a href="https://github.com/GlitchedGoat"><img width="32" src="https://avatars.githubusercontent.com/u/58455756?s=32"/>@GlitchedGoat</a> 的探索和<a href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444" target="_blank">指导</a>。</p>
                     <hr/>
-                    <h3>Is QMole Linux a Linux based system | QMole Linux 是一个基于 Linux 的系统吗</h3>
-                    <p>QMole Linux is not <i>Linux</i>. The word <i>Linux</i> in QMole Linux is a reference to the Linux desktop – not the kernel. The kernel remains Darwin. A typical Linux system is Kernel + GNU + X11 Desktop & Window Manager. QMole is Darwin + GNU + X11 Desktop & Window Manager.</p>
-                    <p>QMole Linux 不是 <i>Linux</i>。<i>Linux</i> 在 QMole Linux 中指的是 Linux 桌面环境而非内核。内核依然使用 Darwin。一般的 Linux 系统是 Kernel + GNU + X11 桌面环境和窗口管理器。而 QMole 则是 Darwin + GNU + X11 桌面环境和窗口管理器。</p>
-                    <hr/>
-                    <h3>Add to Cydia | 添加源至 Cydia</h3>
-                    <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.eu.org"><img alt="Add to Cydia | 添加源至 Cydia" src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.eu.org&up_message=QMole%20Linux&logo=apple&label=Add%20to%20Cydia&color=e48c5c" loading="lazy"></a>
-                    <p>Cydia: <code>http://qmole.pj568.eu.org</code></p>
+                    <p>Sorry, I am working on this right now. Please check the link below for fixing guide.<p>
+                    <p>抱歉，此页尚未完工，请点击以下链接获取修复教程。</p>
+                    <a href="https://github.com/chriskmanx/qmole/issues/5">Guide | 修复教程</a>
                 </div>
             </div>
         </div>
@@ -222,6 +217,27 @@
         </div>
     </div>
     <div class="pjax-reload">
+        <script class="pjax-reload">
+            document.addEventListener('DOMContentLoaded', function () {
+                var cont = document.querySelectorAll('.collapse-content');
+                for (var i = 0; i < cont.length; i++) {
+                    cont[i].classList.toggle("tmp-block");
+                }
+                cont = null;
+                var coll = document.querySelectorAll('.collapsible');
+                for (var i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            });
+        </script>
         <script src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-y/instant.page/5.1.0/instantpage.min.js" type="text/javascript"></script>
     </div>
 </body>
