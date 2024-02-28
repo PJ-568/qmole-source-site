@@ -66,8 +66,8 @@ table, th, td {
     width:100%;
     z-index:-1
 }
-.padding-3 {
-    padding: 3px;
+.gap-3 {
+    gap: 3px;
 }
 .container {
     background-color: #eee;

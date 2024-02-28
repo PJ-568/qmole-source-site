@@ -21,8 +21,9 @@ jobs:
       run: |
         mkdir /home/runner/tmp
         cp -v ./index.html /home/runner/tmp/index.html
-        cp -v ./About.html /home/runner/tmp/About.html
         cp -v ./Installation.html /home/runner/tmp/Installation.html
+        cp -v ./Fix.html /home/runner/tmp/Fix.html
+        cp -v ./About.html /home/runner/tmp/About.html
         cp -v ./CNAME /home/runner/tmp/CNAME
         cp -r -v ./js /home/runner/tmp/js
         cp -r -v ./css /home/runner/tmp/css
@@ -35,8 +36,9 @@ jobs:
     - name: Build site
       run: |
         cp -v /home/runner/tmp/index.html REPO/index.html
-        cp -v /home/runner/tmp/About.html REPO/About.html
         cp -v /home/runner/tmp/Installation.html REPO/Installation.html
+        cp -v /home/runner/tmp/Fix.html REPO/Fix.html
+        cp -v /home/runner/tmp/About.html REPO/About.html
         cp -v /home/runner/tmp/CNAME REPO/CNAME
         cp -r -v /home/runner/tmp/js REPO/js
         cp -r -v /home/runner/tmp/css REPO/css
