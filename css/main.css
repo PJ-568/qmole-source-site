@@ -165,12 +165,12 @@ table, th, td {
 .tmp-block{
     display: block;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 830px) {
     body {
         font-size: 80%;
     }
 }
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 690px) {
     body {
         padding: 0.5rem;
     }
