@@ -33,6 +33,9 @@ a:hover {
 a:visited {
     color: #007bff;
 }
+hr {
+    border: 1px solid #ddd;
+}
 .logo {
     border: 1px solid #ddd;
     display: block;
