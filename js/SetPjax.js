@@ -8,10 +8,10 @@ var pjax = new Pjax({
     ],
 });
 
-// function pjax_reload() {
-//     // 需重载的函数
-// }
+function pjax_reload() {
+    collapsible();
+}
 
-// document.addEventListener("pjax:complete", function () {
-//     pjax_reload();
-// });
+document.addEventListener("pjax:complete", function () {
+    pjax_reload();
+});

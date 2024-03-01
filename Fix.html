@@ -7,6 +7,7 @@
     <title>Fixing Issues | 修复问题</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="//lib.baomitu.com/pjax/0.2.8/pjax.min.js" type="text/javascript"></script>
+    <script src="js/collapsible.js" type="text/javascript"></script>
     <script src="js/SetPjax.js" type="text/javascript"></script>
     <link rel="icon" type="image/svg+xml" href="qmole.png">
 </head>
@@ -216,28 +217,7 @@
             <a href="#">↑ Back to top | 返回页顶 ↑</a>
         </div>
     </div>
-    <div class="pjax-reload">
-        <script class="pjax-reload">
-            document.addEventListener('DOMContentLoaded', function () {
-                var cont = document.querySelectorAll('.collapse-content');
-                for (var i = 0; i < cont.length; i++) {
-                    cont[i].classList.toggle("tmp-block");
-                }
-                cont = null;
-                var coll = document.querySelectorAll('.collapsible');
-                for (var i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                        if (content.style.display === "block") {
-                            content.style.display = "none";
-                        } else {
-                            content.style.display = "block";
-                        }
-                    });
-                }
-            });
-        </script>
+    <div>
         <script src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-y/instant.page/5.1.0/instantpage.min.js" type="text/javascript"></script>
     </div>
 </body>
