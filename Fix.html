@@ -29,9 +29,20 @@
                     <p>Greatly thanks to <a href="https://github.com/GlitchedGoat"><img width="32" src="https://avatars.githubusercontent.com/u/58455756?s=32"/>@GlitchedGoat</a> for the experiment <a href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444" target="_blank">instructions</a>.</p>
                     <p>隆重感谢 <a href="https://github.com/GlitchedGoat"><img width="32" src="https://avatars.githubusercontent.com/u/58455756?s=32"/>@GlitchedGoat</a> 的探索和<a href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444" target="_blank">指导</a>。</p>
                     <hr/>
-                    <p>Sorry, I am working on this right now. Please check the link below for fixing guide.<p>
-                    <p>抱歉，此页尚未完工，请点击以下链接获取修复教程。</p>
-                    <a href="https://github.com/chriskmanx/qmole/issues/5">Guide | 修复教程</a>
+                    <h3>Remove warning and stop it from locking you out | 删除警告并防止锁定</h3>
+                    <button class="collapsible">Install file management app or enable SSH | 安装文件管理软件或启用 SSH</button>
+                    <div class="collapse-content tmp-block">
+                        <p>You may need to install file management app such as <i>iFile</i>, or <i>Terminal</i> if you know about command. Enable SSH is also an option.</p>
+                        <p>您可能需要安装文件管理应用程序，如 <i>iFile</i> ，如果您知道如何使用命令可安装 <i>Terminal</i> 。也可启用 SSH 以获得命令支持。</p>
+                    </div>
+                    <p>Use a jailbroken app like iFile, or the Terminal, to remove the following file: <code>/var/mobile/Documents/beta2_now.txt</code>.<p>
+                    <p>使用如 <i>iFile</i> 或 <i>Terminal</i> 等软件，删除文件：<code>/var/mobile/Documents/beta2_now.txt</code>；</p>
+                    <p>Create an empty file: <code>/var/mobile/Documents/beta2_now.txt</code>.</p>
+                    <p>新建空文件：<code>/var/mobile/Documents/beta2_now.txt</code>；</p>
+                    <p>Edit the group and owner of <code>/var/mobile/Documents/beta2_now.txt</code> to <code>root / admin</code> to make it inaccessible.</p>
+                    <p>将 <code>/var/mobile/Documents/beta2_now.txt</code> 的组和所有者编辑为 <code>root / admin</code> 以使其不可访问。</p>
+                    <p>Now the app can't write this file, which means it can no longer permanently disable itself if you go past <a href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L94"><i>31 August, 2016</i></a>. However you will have to make sure your system date is before this to launch the app still. However you are able to change the system date after you entering the QMole desktop environment.</p>
+                    <p>届时，该应用程序无法写入此文件，因此如果超过 <a href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L94"><i>2016 年 8 月 31 日</i></a> ，它无法禁用自己。尽管如此，您必须确保您的系统日期在此之前才能启动应用程序。不过，您可以在进入 QMole 桌面环境后更改系统日期。</p>
                 </div>
             </div>
         </div>
@@ -206,7 +217,7 @@
             <li><a href="uk.qmole.zmq_2.2.0_iphoneos-arm.deb"> uk.qmole.zmq_2.2.0_iphoneos-arm.deb</a></li>
         </ul>
         <div class="about lb-lock">
-            <p>Copyright (C) 2024 <a href="//PJ568.eu.org">PJ568</a></p>
+            <p>Copyright (C) 2024 <a href="//PJ568.eu.org" target="_blank">PJ568</a></p>
             <a href="mailto:PJ568@PJ568.eu.org">Email | 电子邮件</a>
             <p class="gap-3">
                 <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.eu.org"><img alt="Add to Cydia | 添加源至 Cydia" src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.eu.org&up_message=QMole%20Linux&logo=apple&label=Add%20to%20Cydia&color=e48c5c" loading="lazy"></a>
