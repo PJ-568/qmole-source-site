@@ -185,8 +185,8 @@ table, th, td {
       top: 0;
       left: 0;
       width: 0;
-      height: 2px;
-      background-color: #77b6ff;
+      height: 4px;
+      background-color: #007bff;
       box-shadow: 0 0 10px rgba(119, 182, 255, .7);
     }
   
