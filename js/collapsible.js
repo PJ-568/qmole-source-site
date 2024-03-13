@@ -1,1 +1,25 @@
-function collapsible(){var l=document.querySelectorAll(".collapse-content");if(l)for(var e=0;e<l.length;e++)l[e].classList.toggle("tmp-block");l=null;var t=document.querySelectorAll(".collapsible");if(t)for(e=0;e<t.length;e++)t[e].addEventListener("click",(function(){this.classList.toggle("active");var l=this.nextElementSibling;"block"===l.style.display?l.style.display="none":l.style.display="block"}))}collapsible();
+function collapsible () {
+    var cont = document.querySelectorAll('.collapse-content');
+    if (cont) {
+        for (var i = 0; i < cont.length; i++) {
+            cont[i].classList.toggle("tmp-block");
+        }
+    }
+    cont = null;
+    var coll = document.querySelectorAll('.collapsible');
+    if (coll) {
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    }
+}
+
+collapsible();
