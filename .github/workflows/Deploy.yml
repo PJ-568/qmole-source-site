@@ -9,7 +9,7 @@ on:
       - '**'
       - '!**.md'
       - '!LICENSE'
-      - '!.github\workflows\Test.yml'
+      - '!.github\workflows\**'
 
 jobs:
   deployment:
