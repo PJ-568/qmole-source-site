@@ -202,9 +202,6 @@ table, th, td {
 /* 加载进度条结束 */
 
 @media only screen and (max-width: 830px) {
-    body {
-        padding: 0.5rem;
-    }
     .menu a {
         display: inline-block;
         margin: 0;

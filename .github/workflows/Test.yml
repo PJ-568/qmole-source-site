@@ -12,14 +12,10 @@ jobs:
 
     - name: Checkout qmole-source-site
       uses: actions/checkout@v4
-    - name: HTML/CSS/JS Minifier
-      uses: docker://devatherock/minify-js:3.0.0
-      with:
-        add_suffix: false
 
     - name: Mkdir & Mv
       run: |
-        mkdir /home/runner/tmp
+        mkdir -p /home/runner/tmp > /dev/null
         cp -v ./index.html /home/runner/tmp/index.html
         cp -v ./Installation.html /home/runner/tmp/Installation.html
         cp -v ./Fix.html /home/runner/tmp/Fix.html
@@ -27,6 +23,22 @@ jobs:
         cp -v ./CNAME /home/runner/tmp/CNAME
         cp -r -v ./js /home/runner/tmp/js
         cp -r -v ./css /home/runner/tmp/css
+
+    - name: HTML/CSS/JS Minifier
+      uses: docker://devatherock/minify-js:3.0.0
+      with:
+        add_suffix: false
+
+    - name: Mkdir & Mv
+      run: |
+        mkdir -p /home/runner/tmp > /dev/null
+        cp -u -v ./index.html /home/runner/tmp/index.html
+        cp -u -v ./Installation.html /home/runner/tmp/Installation.html
+        cp -u -v ./Fix.html /home/runner/tmp/Fix.html
+        cp -u -v ./About.html /home/runner/tmp/About.html
+        cp -u -v ./CNAME /home/runner/tmp/CNAME
+        cp -u -r -v ./js /home/runner/tmp/js
+        # cp -u -r -v ./css /home/runner/tmp/css
 
     - name: Checkout qmole-packages
       uses: actions/checkout@v4
