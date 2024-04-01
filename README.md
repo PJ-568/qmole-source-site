@@ -16,4 +16,4 @@ QMole Cydia 软件源以 [chriskmanx/qmole-packages](https://github.com/chriskma
     <a href="https://gitee.com/PJ-568/qmole-source-site"><img alt="Gitee repo" src="https://img.shields.io/website?url=https%3A%2F%2Fgitee.com%2FPJ-568%2Fqmole-source-site&up_color=007bff&up_message=PJ-568/qmole-source-site&logo=gitee&label=Gitee" loading="lazy"></a>
 </p>
 
-[Visit | 访问](https://qmole.pj568.eu.org)
+[Visit | 访问](http://qmole.pj568.sbs)
