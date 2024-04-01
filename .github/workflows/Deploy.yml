@@ -71,7 +71,7 @@ jobs:
       uses: cicirello/generate-sitemap@v1
       with:
         path-to-root: ./REPO
-        base-url-path: https://qmole.pj568.eu.org/
+        base-url-path: https://qmole.pj568.sbs/
 
     - uses: JamesIves/github-pages-deploy-action@v4
       with:
