@@ -1,9 +1,9 @@
 <p align="center">
-    <img width="256" src="https://qmole.pj568.eu.org/qmole.png" alt="QMole Logo" />
+    <img width="256" src="https://qmole.pj568.sbs/qmole.png" alt="QMole Logo" />
 </p>
 <h1 align="center">QMole Software Repository | QMole 软件源</h1>
 
-Cydia: `http://qmole.pj568.eu.org/`
+Cydia: `http://qmole.pj568.sbs/`
 
 QMole Software Repository for Cydia is a mirror which built from [chriskmanx/qmole-packages](https://github.com/chriskmanx/qmole-packages) to replace outdated http://qmole.uk/linux .
 
