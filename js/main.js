@@ -58,7 +58,7 @@ function 初始化() {
 
 // 触发器
 //// 网页加载完毕后触发
-window.addEventListener('load', () => 初始化());
+window.addEventListener('DOMContentLoaded', () => 初始化());
 //// 监听 Pjax 完成后，重新加载
 document.addEventListener("pjax:complete", function () {
     collapsible();
