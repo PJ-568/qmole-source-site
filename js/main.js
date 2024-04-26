@@ -1,65 +1,60 @@
-// PJAX 集成
-let pjax;    //// 使其能全局访问
-//// 初始化 PJAX
-function initPjax(){
-    try{
-        pjax = new Pjax({
-            selectors: [
-                "head meta",
-                "head title",
-                "body h1",
-                "fake-window",
-                ".pjax-reload"
-            ]
-        })
-    }
-    catch(e){
-        console.log('PJAX 初始化出错：' + e);
-    }
-}
+// 使用 IIFE 包裹以避免全局变量污染
+(function() {
+    // 使用 let 声明局部变量以减少变量污染
+    let pjax;
 
-document.addEventListener("pjax:complete", function () {
-    collapsible();
-});
-
-
-// 折叠元素
-function collapsible () {
-    var cont = document.querySelectorAll('.collapse-content');
-    if (cont) {
-        for (var i = 0; i < cont.length; i++) {
-            cont[i].classList.toggle("tmp-block");
-        }
-    }
-    cont = null;
-    var coll = document.querySelectorAll('.collapsible');
-    if (coll) {
-        for (var i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
+    // 初始化 PJAX
+    function initPjax(){
+        try{
+            pjax = new Pjax({
+                selectors: [
+                    "head meta",
+                    "head title",
+                    "body h1",
+                    "fake-window",
+                    ".pjax-reload"
+                ]
             });
+        } catch(e){
+            console.log('PJAX 初始化出错：' + e);
         }
     }
-}
+
+    // 折叠元素的函数，增加了异常处理和一些优化
+    function handleCollapsibleElements() {
+        try {
+            let cont = document.querySelectorAll('.collapse-content');
+            cont.forEach(element => element.classList.toggle("tmp-block"));
+
+            let coll = document.querySelectorAll('.collapsible');
+            coll.forEach(element => {
+                element.addEventListener("click", function() {
+                    let content = this.nextElementSibling;
+                    if (content && content.style.display === "block") {
+                        content.style.display = "none";
+                    } else if (content) {
+                        content.style.display = "block";
+                    }
+                });
+            });
+        } catch (e) {
+            console.log('处理可折叠元素时出错：' + e);
+        }
+    }
 
 
-// 初始化
-function 初始化() {
-    initPjax();    //// 初始化 PJAX
-    collapsible();
-}
+    // 初始化函数，改进了命名
+    function initialize() {
+        initPjax();
+        handleCollapsibleElements();
+    }
 
 
-// 触发器
-//// 网页加载完毕后触发
-window.addEventListener('DOMContentLoaded', () => 初始化());
-//// 监听 Pjax 完成后，重新加载
-document.addEventListener("pjax:complete", function () {
-    collapsible();
-})
+    // 触发器
+    // 网页加载完毕后触发
+    window.addEventListener('DOMContentLoaded', () => initialize());
+    // 监听 Pjax 完成后，重新加载
+    document.addEventListener("pjax:complete", function() {
+        handleCollapsibleElements();
+    });
+})();
