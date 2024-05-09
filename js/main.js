@@ -29,6 +29,7 @@
             let coll = document.querySelectorAll('.collapsible');
             coll.forEach(element => {
                 element.addEventListener("click", function() {
+                    this.classList.toggle("active");
                     let content = this.nextElementSibling;
                     if (content && content.style.display === "block") {
                         content.style.display = "none";
