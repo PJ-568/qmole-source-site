@@ -6,6 +6,7 @@
     // 初始化 PJAX
     function initPjax(){
         try{
+            const Pjax = window.Pjax || function() {};
             pjax = new Pjax({
                 selectors: [
                     "head meta",
@@ -44,7 +45,7 @@
     }
 
 
-    // 初始化函数，改进了命名
+    // 初始化
     function initialize() {
         initPjax();
         handleCollapsibleElements();
