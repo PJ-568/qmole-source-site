@@ -1,5 +1,5 @@
-let loadingBar
-let progress
+let loadingBar = document.querySelector(".loading-bar");
+let progress = document.querySelector(".loading-bar .progress");
 
 var timer = null;
 
