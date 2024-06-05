@@ -11,6 +11,11 @@ on:
       - '!LICENSE'
       - '!.github\workflows\**'
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deployment:
     runs-on: ubuntu-latest
