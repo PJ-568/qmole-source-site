@@ -73,6 +73,14 @@ jobs:
         path-to-root: ./REPO
         base-url-path: https://qmole.pj568.sbs/
 
-    - uses: JamesIves/github-pages-deploy-action@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        folder: ./REPO
+        path: './REPO'
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
