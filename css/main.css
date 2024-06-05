@@ -35,6 +35,9 @@ a:visited {
 hr {
     border: 1px solid #ddd;
 }
+li {
+    overflow: scroll;
+}
 .logo {
     border: 1px solid #ddd;
     display: block;
@@ -68,6 +71,8 @@ table, th, td {
 .gap-3 {
     display: flex;
     gap: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .container {
     background-color: #eee;
