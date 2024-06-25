@@ -1,5 +1,5 @@
 // 使用 IIFE 包裹以避免全局变量污染
-(function() {
+(function () {
     var loadingBar = document.querySelector(".loading-bar");
     var progress = document.querySelector(".loading-bar .progress");
     var timer = null;
@@ -12,8 +12,8 @@
 
     // 初始化 PJAX
     function initPjax() {
-        try{
-            const Pjax = window.Pjax || function() {};
+        try {
+            const Pjax = window.Pjax || function () { };
             pjax = new Pjax({
                 selectors: [
                     "head meta",
@@ -23,7 +23,7 @@
                     ".pjax-reload"
                 ]
             });
-        } catch(e){
+        } catch (e) {
             console.log('PJAX 初始化出错：' + e);
         }
     }
@@ -36,7 +36,7 @@
 
             let coll = document.querySelectorAll('.collapsible');
             coll.forEach(element => {
-                element.addEventListener("click", function() {
+                element.addEventListener("click", function () {
                     this.classList.toggle("active");
                     let content = this.nextElementSibling;
                     if (content && content.style.display === "block") {
@@ -51,11 +51,11 @@
         }
     }
 
-    function endLoad(){
+    function endLoad() {
         clearInterval(timer);
         progress.style.width = "100%";
         loadingBar.classList.remove("loading");
-    
+
         setTimeout(function () {
             progress.style.width = 0;
         }, 400);
@@ -79,20 +79,20 @@
 
         loadingBar.classList.add("loading");
         progress.style.width = loadingBarWidth + "%";
-    
+
         clearInterval(timer);
         timer = setInterval(function () {
             loadingBarWidth += 3;
-    
+
             if (loadingBarWidth > MAX_LOADING_WIDTH) {
                 loadingBarWidth = MAX_LOADING_WIDTH;
             }
-    
+
             progress.style.width = loadingBarWidth + "%";
         }, 500);
     });
     // 监听 Pjax 完成后，重新加载
-    document.addEventListener("pjax:complete", function() {
+    document.addEventListener("pjax:complete", function () {
         handleCollapsibleElements();
         endLoad();
     });

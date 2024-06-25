@@ -3,41 +3,57 @@ body {
     background-color: #f4f4f4;
     padding: 1rem;
 }
+
 h1 {
     text-align: center;
     color: #333;
 }
+
 ul {
     list-style: none;
     padding: 1rem;
     padding-top: 0;
     padding-bottom: 0;
 }
+
 li {
     background-color: #fff;
     border: 1px solid #ddd;
     margin-bottom: 5px;
+}
+
+li a {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
     padding: 1rem;
 }
+
 li:hover {
     border: 1px solid #007bff;
 }
+
 a {
     color: #007bff;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 a:visited {
     color: #007bff;
 }
+
 hr {
     border: 1px solid #ddd;
 }
+
 li {
     overflow: scroll;
 }
+
 .logo {
     border: 1px solid #ddd;
     display: block;
@@ -45,35 +61,42 @@ li {
     margin-right: auto;
     width: 30%;
 }
-.logo-container{
+
+.logo-container {
     padding-top: 1rem;
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
+
 .bg-img {
-    background-attachment:fixed;
-    background-image:url(https://bing.shangzhenyang.com/api/1080p);
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    -webkit-filter:blur(10px);
-    filter:blur(10px);
-    height:100%;
-    left:0;
-    top:0;
-    opacity:.5;
-    position:fixed;
-    transform:scale(1.1);
-    width:100%;
-    z-index:-1
+    background-attachment: fixed;
+    background-image: url(https://bing.shangzhenyang.com/api/1080p);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    position: fixed;
+    transform: scale(1.1);
+    width: 100%;
+    z-index: -1
 }
+
 .gap-3 {
     display: flex;
     gap: 3px;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .container {
     background-color: #eee;
     max-width: 1000px;
@@ -81,18 +104,22 @@ table, th, td {
     padding-top: 0;
     padding-bottom: 0;
 }
+
 .lb-lock {
     padding: 1rem;
 }
+
 .fake-window {
     background-color: #fff;
     border: 1px solid #ddd;
 }
+
 .menu {
     padding: 3px;
     margin-top: 3px;
     border-bottom: 1px solid #ddd;
 }
+
 .menu a {
     color: #444;
     background-color: #eee;
@@ -100,20 +127,24 @@ table, th, td {
     padding: 3.5px 0.5em;
     text-decoration: none;
 }
+
 .menu a:hover {
     color: #000;
     background-color: #ddd;
     border: 1px solid #ccc;
     text-decoration: underline;
 }
+
 .menu a:visited {
     color: #444;
 }
+
 .menu .current {
     color: #000;
     background-color: #fff;
     border-bottom: 1px solid #fff;
 }
+
 @media only screen and (min-width: 830px) {
     .menu .current:hover {
         background-color: #fff;
@@ -121,18 +152,22 @@ table, th, td {
         text-decoration: none;
     }
 }
+
 .menu .current:visited {
     color: #000;
 }
+
 .main-content {
     padding: 1rem;
 }
+
 .about {
     text-align: center;
     font-size: small;
     color: gray;
 }
-.about a{
+
+.about a {
     color: gray;
 }
 
@@ -149,7 +184,8 @@ table, th, td {
     font-size: 15px;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
     background-color: #666;
 }
 
@@ -171,9 +207,11 @@ table, th, td {
     overflow: hidden;
     background-color: #f1f1f1;
 }
-.tmp-block{
+
+.tmp-block {
     display: block;
 }
+
 /* 可折叠元素结束 */
 
 /* 加载进度条 */
@@ -184,26 +222,27 @@ table, th, td {
     z-index: 99999;
     opacity: 0;
     transition: opacity .4s linear;
-  
+
     .progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 4px;
-      background-color: #007bff;
-      box-shadow: 0 0 10px rgba(119, 182, 255, .7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background-color: #007bff;
+        box-shadow: 0 0 10px rgba(119, 182, 255, .7);
     }
-  
+
     &.loading {
-      opacity: 1;
-      transition: none;
-  
-      .progress {
-        transition: width .4s ease;
-      }
+        opacity: 1;
+        transition: none;
+
+        .progress {
+            transition: width .4s ease;
+        }
     }
-  }
+}
+
 /* 加载进度条结束 */
 
 @media only screen and (max-width: 830px) {
@@ -212,9 +251,11 @@ table, th, td {
         margin: 0;
         border-bottom: 1px solid #ccc;
     }
+
     .menu .current {
         border-bottom: 1px solid #ccc;
     }
+
     .menu {
         display: flex;
         flex-wrap: wrap;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="How to install QMole linux on iPhone or iPad? 如何在 iPhone 或 iPad 上安装 QMole linux？">
@@ -11,84 +12,131 @@
     <script src="js/load_ani.js" type="text/javascript"></script>
     <link rel="icon" type="image/svg+xml" href="qmole.png">
 </head>
+
 <body>
     <img id="bg-img" class="bg-img" src="https://bing.shangzhenyang.com/api/1080p" alt="Bing Wallpaper" loading="lazy">
     <div class="container">
-        <div class="logo-container"><img class="logo" src="qmole.png" alt="QMole Logo"/></div>
+        <div class="logo-container"><img class="logo" src="qmole.png" alt="QMole Logo" /></div>
         <h1 class="pjax-reload">QMole Linux installation guide | QMole Linux 安装教程</h1>
         <div class="lb-lock">
             <div class="fake-window pjax-reload">
                 <div class="menu">
                     <a title="QMole Linux" href=".">Home | 主页</a>
-                    <a class="current" title="QMole Linux installation guide | QMole Linux 安装教程" href="Installation.html">Installation | 安装教程</a>
+                    <a class="current" title="QMole Linux installation guide | QMole Linux 安装教程"
+                        href="Installation.html">Installation | 安装教程</a>
                     <a title="Fix QMole expiration date issue | 修复 QMole 到期问题" href="Fix.html">Fixing Issues | 修复问题</a>
-                    <a title="QMole Linux Desktop Manual Introduction | QMole Linux 桌面使用手册" href="https://chriskohlhepp.wordpress.com/qmole-linux-desktop-for-ios-manual/">Manual | 用法指南</a>
+                    <a title="QMole Linux Desktop Manual Introduction | QMole Linux 桌面使用手册"
+                        href="https://chriskohlhepp.wordpress.com/qmole-linux-desktop-for-ios-manual/">Manual | 用法指南</a>
                     <a title="What is QMole Software Repository | QMole 软件源是什么" href="About.html">About | 关于</a>
                 </div>
                 <div class="main-content">
-                    <p>Greatly thanks to <a href="https://github.com/GlitchedGoat"><img width="32" src="https://avatars.githubusercontent.com/u/58455756?s=32" loading="lazy"/>@GlitchedGoat</a> for the experiment and <a href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444" target="_blank">instructions</a>.</p>
-                    <p>隆重感谢 <a href="https://github.com/GlitchedGoat"><img width="32" src="https://avatars.githubusercontent.com/u/58455756?s=32" loading="lazy"/>@GlitchedGoat</a> 的探索和<a href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444" target="_blank">指导</a>。</p>
-                    <hr/>
+                    <p>Greatly thanks to <a href="https://github.com/GlitchedGoat"><img width="32"
+                                src="https://avatars.githubusercontent.com/u/58455756?s=32"
+                                loading="lazy" />@GlitchedGoat</a> for the experiment and <a
+                            href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444"
+                            target="_blank">instructions</a>.</p>
+                    <p>隆重感谢 <a href="https://github.com/GlitchedGoat"><img width="32"
+                                src="https://avatars.githubusercontent.com/u/58455756?s=32"
+                                loading="lazy" />@GlitchedGoat</a> 的探索和<a
+                            href="https://github.com/chriskmanx/qmole/issues/5#issuecomment-1099762444"
+                            target="_blank">指导</a>。</p>
+                    <hr />
                     <h3>Check version of iOS | 检查 iOS 版本</h3>
-                    <p>The iOS version should below iOS 9. It works on first gen iPad with iOS 5.1.1.<p>
+                    <p>The iOS version should below iOS 9. It works on first gen iPad with iOS 5.1.1.
+                    <p>
                     <p>iOS 版本应该低于 iOS 9。已明确它可用在 iOS 5.1.1 的第一代 iPad 。</p>
-                    <hr/>
+                    <hr />
                     <h3>Check free space | 检查存储空间</h3>
-                    <p>Make sure you have at least 3GB free space on your device.<p>
+                    <p>Make sure you have at least 3GB free space on your device.
+                    <p>
                     <p>确保您的设备上至少有 3GB 可用空间。</p>
-                    <hr/>
+                    <hr />
                     <h3>Add QMole Linux repo to Cydia | 添加 QMole Linux 源到 Cydia</h3>
                     <button class="collapsible">Deal with certificate error | 解决认证错误</button>
                     <div class="collapse-content tmp-block">
-                        <p>Install the IPG Certificates by opening <a href="http://cydia.invoxiplaygames.uk/certificates/" target="_blank">http://cydia.invoxiplaygames.uk/certificates/</a> on your device and click on <a href="http://cydia.invoxiplaygames.uk/certificates/ISRG2.pem" target="_blank">ISRG Root X1 CA (Let's Encrypt)</a>.</p>
-                        <p>在设备上打开 <a href="http://cydia.invoxiplaygames.uk/certificates/" target="_blank">http://cydia.invoxiplaygames.uk/certificates/</a> 后点击 <a href="http://cydia.invoxiplaygames.uk/certificates/ISRG2.pem" target="_blank">ISRG Root X1 CA (Let's Encrypt)</a> 以安装 IPG 证书。</p>
+                        <p>Install the IPG Certificates by opening <a
+                                href="http://cydia.invoxiplaygames.uk/certificates/"
+                                target="_blank">http://cydia.invoxiplaygames.uk/certificates/</a> on your device and
+                            click on <a href="http://cydia.invoxiplaygames.uk/certificates/ISRG2.pem"
+                                target="_blank">ISRG Root X1 CA (Let's Encrypt)</a>.</p>
+                        <p>在设备上打开 <a href="http://cydia.invoxiplaygames.uk/certificates/"
+                                target="_blank">http://cydia.invoxiplaygames.uk/certificates/</a> 后点击 <a
+                                href="http://cydia.invoxiplaygames.uk/certificates/ISRG2.pem" target="_blank">ISRG Root
+                                X1 CA (Let's Encrypt)</a> 以安装 IPG 证书。</p>
                         <button class="collapsible">Why | 为什么</button>
                         <div class="collapse-content tmp-block">
-                            <p>Older versions of iPhone OS aren't new enough to have modern certificate authorities trusted, meaning only sites using older certificate authorities are able to have a secure connection.</p>
+                            <p>Older versions of iPhone OS aren't new enough to have modern certificate authorities
+                                trusted, meaning only sites using older certificate authorities are able to have a
+                                secure connection.</p>
                             <p>旧版本的 iOS 系统无法让现代证书信任，若不安装新认证证书，就只能安全连接使用旧证书的网站。</p>
                         </div>
                     </div>
-                    <p>Open this web page on your device and click on <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.sbs"><img alt="Add to Cydia | 添加源至 Cydia" src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.sbs&up_message=QMole%20Linux&logo=apple&label=Add%20to%20Cydia&color=e48c5c" loading="lazy"></a>. Or just add <code>http://qmole.pj568.sbs</code> in Cydia.</p>
-                    <p>在设备上打开此网页后点击 <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.sbs"><img alt="Add to Cydia | 添加源至 Cydia" src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.sbs&up_message=QMole%20Linux&logo=apple&label=添加至%20Cydia&color=e48c5c" loading="lazy"></a>。或直接在 Cydia 添加：<code>http://qmole.pj568.sbs</code>。</p>
-                    <hr/>
+                    <p>Open this web page on your device and click on <a
+                            href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.sbs"><img
+                                alt="Add to Cydia | 添加源至 Cydia"
+                                src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.sbs&up_message=QMole%20Linux&logo=apple&label=Add%20to%20Cydia&color=e48c5c"
+                                loading="lazy"></a>. Or just add <code>http://qmole.pj568.sbs</code> in Cydia.</p>
+                    <p>在设备上打开此网页后点击 <a
+                            href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.sbs"><img
+                                alt="Add to Cydia | 添加源至 Cydia"
+                                src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.sbs&up_message=QMole%20Linux&logo=apple&label=添加至%20Cydia&color=e48c5c"
+                                loading="lazy"></a>。或直接在 Cydia 添加：<code>http://qmole.pj568.sbs</code>。</p>
+                    <hr />
                     <h3>Install <code>QMole Usr Local Switch</code> | 安装 <code>QMole Usr Local Switch</code></h3>
-                    <p>Search and install <code>QMole Usr Local Switch</code> in Cydia.<p>
+                    <p>Search and install <code>QMole Usr Local Switch</code> in Cydia.
+                    <p>
                     <p>在 Cydia 搜索并安装 <code>QMole Usr Local Switch</code> 。</p>
                     <button class="collapsible">What is it and why | 是什么、为什么</button>
                     <div class="collapse-content tmp-block">
-                        <p>The package makes a symlink from <code>/usr/local</code> to the user storage in order to gain space for QMole to install.</p>
+                        <p>The package makes a symlink from <code>/usr/local</code> to the user storage in order to gain
+                            space for QMole to install.</p>
                         <p>该软件包从 <code>/usr/local</code> 创建符号链接到用户存储，使 QMole 有足够的存储空间以安装。</p>
                     </div>
-                    <hr/>
+                    <hr />
                     <h3>Install <code>QMole Desktop</code> | 安装 <code>QMole Desktop</code></h3>
-                    <p>Search and install <code>QMole Desktop</code> in Cydia.<p>
+                    <p>Search and install <code>QMole Desktop</code> in Cydia.
+                    <p>
                     <p>在 Cydia 搜索并安装 <code>QMole Desktop</code> 。</p>
                     <button class="collapsible">What is it | 是什么</button>
                     <div class="collapse-content tmp-block">
                         <p>The package enables you to access QMole Desktop environment.</p>
                         <p>该软件包使您能够访问 QMole 桌面环境。</p>
                     </div>
-                    <hr/>
+                    <hr />
                     <h3>Set time | 设置时间</h3>
-                    <p>Set your device's clock to a date before <a href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L94"><i>31 August, 2016</i></a>.<p>
-                    <p>将设备的系统时间设置到任意于 <a href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L94"><i>2016 年 8 月 31 日</i></a> 之前的日期。</p>
+                    <p>Set your device's clock to a date before <a
+                            href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L94"><i>31
+                                August, 2016</i></a>.
+                    <p>
+                    <p>将设备的系统时间设置到任意于 <a
+                            href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L94"><i>2016
+                                年 8 月 31 日</i></a> 之前的日期。</p>
                     <button class="collapsible">Why | 为什么</button>
                     <div class="collapse-content tmp-block">
-                        <p>For unknown reasons, QMole has a built in expiration date which will disable the "I Agree" / "Start" button if the date is old enough.</p>
+                        <p>For unknown reasons, QMole has a built in expiration date which will disable the "I Agree" /
+                            "Start" button if the date is old enough.</p>
                         <p>由于未知的原因，QMole 有一个内置的到期日期，如果日期到了，它将禁用“I Agree”或“Start”按钮。</p>
-                        <p>Code view: <a href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L454">#L454</a> <a href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L460">#L460</a></p>
+                        <p>Code view: <a
+                                href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L454">#L454</a>
+                            <a
+                                href="https://github.com/chriskmanx/qmole/blob/master/qmolegui/QMole/QMole/AuthViewController.m#L460">#L460</a>
+                        </p>
                         <button class="collapsible">How to fix | 如何修复</button>
                         <div class="collapse-content tmp-block">
-                            <p><a title="Fix QMole expiration date issue | 修复 QMole 到期问题" href="Fix.html">Fixing Issues | 修复问题</a></p>
+                            <p><a title="Fix QMole expiration date issue | 修复 QMole 到期问题" href="Fix.html">Fixing Issues
+                                    | 修复问题</a></p>
                         </div>
                     </div>
-                    <hr/>
+                    <hr />
                     <h3>Launch and set up the app | 启动并配置应用程序</h3>
-                    <p>Launch the QMole app on your homescreen.<p>
+                    <p>Launch the QMole app on your homescreen.
+                    <p>
                     <p>在主屏幕上启动 QMole 应用程序。</p>
-                    <p>Read the terms and conditions, then press "I Agree".<p>
+                    <p>Read the terms and conditions, then press "I Agree".
+                    <p>
                     <p>阅读条款和条件，然后点击“I Agree”。</p>
-                    <p>Press "Start".<p>
+                    <p>Press "Start".
+                    <p>
                     <p>点击“Start”。</p>
                 </div>
             </div>
@@ -102,7 +150,8 @@
             <li><a href="uk.qmole.avian_1.1.0_iphoneos-arm.deb"> uk.qmole.avian_1.1.0_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.bdftopcf_1.0.3_iphoneos-arm.deb"> uk.qmole.bdftopcf_1.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.bitmap_1.0.3_iphoneos-arm.deb"> uk.qmole.bitmap_1.0.3_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.bmpanel2_2-2.1pre1_iphoneos-arm.deb"> uk.qmole.bmpanel2_2-2.1pre1_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.bmpanel2_2-2.1pre1_iphoneos-arm.deb"> uk.qmole.bmpanel2_2-2.1pre1_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.boehmgc_7.2_iphoneos-arm.deb"> uk.qmole.boehmgc_7.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.cairo_1.10.2_iphoneos-arm.deb"> uk.qmole.cairo_1.10.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.camlp5_6.14_iphoneos-arm.deb"> uk.qmole.camlp5_6.14_iphoneos-arm.deb</a></li>
@@ -123,34 +172,41 @@
             <li><a href="uk.qmole.eterm_0.9.6_iphoneos-arm.deb"> uk.qmole.eterm_0.9.6_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.evieext_1.0.2_iphoneos-arm.deb"> uk.qmole.evieext_1.0.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.feh_1.3.4_iphoneos-arm.deb"> uk.qmole.feh_1.3.4_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.fontconfig_2.8.0_iphoneos-arm.deb"> uk.qmole.fontconfig_2.8.0_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.fontconfig_2.8.0_iphoneos-arm.deb"> uk.qmole.fontconfig_2.8.0_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.fontutil_1.2.0_iphoneos-arm.deb"> uk.qmole.fontutil_1.2.0_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.fox_1.6.49_iphoneos-arm.deb"> uk.qmole.fox_1.6.49_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.freetype_2.4.7_iphoneos-arm.deb"> uk.qmole.freetype_2.4.7_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.galculator_2.1_iphoneos-arm.deb"> uk.qmole.galculator_2.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.gambit_4.6.4_iphoneos-arm.deb"> uk.qmole.gambit_4.6.4_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.gdkpixbuf_2.24.0_iphoneos-arm.deb"> uk.qmole.gdkpixbuf_2.24.0_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.gdkpixbuf_2.24.0_iphoneos-arm.deb"> uk.qmole.gdkpixbuf_2.24.0_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.geany_0.21_iphoneos-arm.deb"> uk.qmole.geany_0.21_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.giflib_4.1.6_iphoneos-arm.deb"> uk.qmole.giflib_4.1.6_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.glib_2.0_iphoneos-arm.deb"> uk.qmole.glib_2.0_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.gnomeicontheme_2.17.4_iphoneos-arm.deb"> uk.qmole.gnomeicontheme_2.17.4_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.gnomeicontheme_2.17.4_iphoneos-arm.deb">
+                    uk.qmole.gnomeicontheme_2.17.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.gnomepaint_0.3_iphoneos-arm.deb"> uk.qmole.gnomepaint_0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.gnutls_2.12.7_iphoneos-arm.deb"> uk.qmole.gnutls_2.12.7_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.gtk2_2.24.17_iphoneos-arm.deb"> uk.qmole.gtk2_2.24.17_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.gtk3_3.2.1_iphoneos-arm.deb"> uk.qmole.gtk3_3.2.1_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.herbstluft_0.2.2_iphoneos-arm.deb"> uk.qmole.herbstluft_0.2.2_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.herbstluft_0.2.2_iphoneos-arm.deb"> uk.qmole.herbstluft_0.2.2_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.hping2_2.0.0_iphoneos-arm.deb"> uk.qmole.hping2_2.0.0_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.ical_3.0.2_iphoneos-arm.deb"> uk.qmole.ical_3.0.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.iceauth_1.0.2_iphoneos-arm.deb"> uk.qmole.iceauth_1.0.2_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.imagemagick_4.2.9_iphoneos-arm.deb"> uk.qmole.imagemagick_4.2.9_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.imagemagick_4.2.9_iphoneos-arm.deb"> uk.qmole.imagemagick_4.2.9_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.imlib2_1.4.4_iphoneos-arm.deb"> uk.qmole.imlib2_1.4.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.ipython_1.1.1_iphoneos-arm.deb"> uk.qmole.ipython_1.1.1_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.ipythonnotebook_1.1.1_iphoneos-arm.deb"> uk.qmole.ipythonnotebook_1.1.1_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.ipythonnotebook_1.1.1_iphoneos-arm.deb">
+                    uk.qmole.ipythonnotebook_1.1.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.ivte_0.5.1_iphoneos-arm.deb"> uk.qmole.ivte_0.5.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.jasmin_2.4_iphoneos-arm.deb"> uk.qmole.jasmin_2.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.junit4_4_iphoneos-arm.deb"> uk.qmole.junit4_4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.leafpad_0.8.17_iphoneos-arm.deb"> uk.qmole.leafpad_0.8.17_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libXxf86misc_1.0.1_iphoneos-arm.deb"> uk.qmole.libXxf86misc_1.0.1_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libXxf86misc_1.0.1_iphoneos-arm.deb"> uk.qmole.libXxf86misc_1.0.1_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.libart_2.3.20_iphoneos-arm.deb"> uk.qmole.libart_2.3.20_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libast_0.7_iphoneos-arm.deb"> uk.qmole.libast_0.7_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libcroco_0.6.2_iphoneos-arm.deb"> uk.qmole.libcroco_0.6.2_iphoneos-arm.deb</a></li>
@@ -158,11 +214,13 @@
             <li><a href="uk.qmole.libdmx_1.0.2_iphoneos-arm.deb"> uk.qmole.libdmx_1.0.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libdnet_1.0_iphoneos-arm.deb"> uk.qmole.libdnet_1.0_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libetpan_0.57_iphoneos-arm.deb"> uk.qmole.libetpan_0.57_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libfontenc_1.1.0_iphoneos-arm.deb"> uk.qmole.libfontenc_1.1.0_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libfontenc_1.1.0_iphoneos-arm.deb"> uk.qmole.libfontenc_1.1.0_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.libfs_1.0.1_iphoneos-arm.deb"> uk.qmole.libfs_1.0.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libgiblib_1.2.4_iphoneos-arm.deb"> uk.qmole.libgiblib_1.2.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libglade_2.6.4_iphoneos-arm.deb"> uk.qmole.libglade_2.6.4_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libgnomecanvas_2.30.3_iphoneos-arm.deb"> uk.qmole.libgnomecanvas_2.30.3_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libgnomecanvas_2.30.3_iphoneos-arm.deb">
+                    uk.qmole.libgnomecanvas_2.30.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libice_1.0.4_iphoneos-arm.deb"> uk.qmole.libice_1.0.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libiconv_1.14_iphoneos-arm.deb"> uk.qmole.libiconv_1.14_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libintl_0.8_iphoneos-arm.deb"> uk.qmole.libintl_0.8_iphoneos-arm.deb</a></li>
@@ -170,41 +228,54 @@
             <li><a href="uk.qmole.libpng_1.4.8_iphoneos-arm.deb"> uk.qmole.libpng_1.4.8_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.librsvg_2.32.1_iphoneos-arm.deb"> uk.qmole.librsvg_2.32.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libsm_1.0.1_iphoneos-arm.deb"> uk.qmole.libsm_1.0.1_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libwindowswm_1.0.0_iphoneos-arm.deb"> uk.qmole.libwindowswm_1.0.0_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libwindowswm_1.0.0_iphoneos-arm.deb"> uk.qmole.libwindowswm_1.0.0_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.libx11_1.1.5_iphoneos-arm.deb"> uk.qmole.libx11_1.1.5_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxau_1.0.4_iphoneos-arm.deb"> uk.qmole.libxau_1.0.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxaw_1.0.9_iphoneos-arm.deb"> uk.qmole.libxaw_1.0.9_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxcb_1.4_iphoneos-arm.deb"> uk.qmole.libxcb_1.4_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxcomposite_0.4.0_iphoneos-arm.deb"> uk.qmole.libxcomposite_0.4.0_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxcursor_1.1.9_iphoneos-arm.deb"> uk.qmole.libxcursor_1.1.9_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxdamage_1.1.1_iphoneos-arm.deb"> uk.qmole.libxdamage_1.1.1_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libxcomposite_0.4.0_iphoneos-arm.deb">
+                    uk.qmole.libxcomposite_0.4.0_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libxcursor_1.1.9_iphoneos-arm.deb"> uk.qmole.libxcursor_1.1.9_iphoneos-arm.deb</a>
+            </li>
+            <li><a href="uk.qmole.libxdamage_1.1.1_iphoneos-arm.deb"> uk.qmole.libxdamage_1.1.1_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.libxdmcp_1.0.2_iphoneos-arm.deb"> uk.qmole.libxdmcp_1.0.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxext_1.0.4_iphoneos-arm.deb"> uk.qmole.libxext_1.0.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxfixes_4.0.3_iphoneos-arm.deb"> uk.qmole.libxfixes_4.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxfont_1.4.2_iphoneos-arm.deb"> uk.qmole.libxfont_1.4.2_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxfontcache_1.0.4_iphoneos-arm.deb"> uk.qmole.libxfontcache_1.0.4_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libxfontcache_1.0.4_iphoneos-arm.deb">
+                    uk.qmole.libxfontcache_1.0.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxft_2.1.13_iphoneos-arm.deb"> uk.qmole.libxft_2.1.13_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxi_1.1.3_iphoneos-arm.deb"> uk.qmole.libxi_1.1.3_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxinerama_1.0.3_iphoneos-arm.deb"> uk.qmole.libxinerama_1.0.3_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxkbfile_1.0.5_iphoneos-arm.deb"> uk.qmole.libxkbfile_1.0.5_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libxinerama_1.0.3_iphoneos-arm.deb"> uk.qmole.libxinerama_1.0.3_iphoneos-arm.deb</a>
+            </li>
+            <li><a href="uk.qmole.libxkbfile_1.0.5_iphoneos-arm.deb"> uk.qmole.libxkbfile_1.0.5_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.libxml2_2.7.8_iphoneos-arm.deb"> uk.qmole.libxml2_2.7.8_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxmu_1.0.4_iphoneos-arm.deb"> uk.qmole.libxmu_1.0.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxpm_3.5.9_iphoneos-arm.deb"> uk.qmole.libxpm_3.5.9_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxrandr_1.2.3_iphoneos-arm.deb"> uk.qmole.libxrandr_1.2.3_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxrender_0.9.6_iphoneos-arm.deb"> uk.qmole.libxrender_0.9.6_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libxrender_0.9.6_iphoneos-arm.deb"> uk.qmole.libxrender_0.9.6_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.libxres_1.0.3_iphoneos-arm.deb"> uk.qmole.libxres_1.0.3_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxscrnsaver_1.1.3_iphoneos-arm.deb"> uk.qmole.libxscrnsaver_1.1.3_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libxscrnsaver_1.1.3_iphoneos-arm.deb">
+                    uk.qmole.libxscrnsaver_1.1.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxt_1.0.5_iphoneos-arm.deb"> uk.qmole.libxt_1.0.5_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxtst_1.0.3_iphoneos-arm.deb"> uk.qmole.libxtst_1.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxv_1.0.4_iphoneos-arm.deb"> uk.qmole.libxv_1.0.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.libxvmc_1.0.4_iphoneos-arm.deb"> uk.qmole.libxvmc_1.0.4_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxxf86dga_1.0.2_iphoneos-arm.deb"> uk.qmole.libxxf86dga_1.0.2_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.libxxf86vm_1.0.2_iphoneos-arm.deb"> uk.qmole.libxxf86vm_1.0.2_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.libxxf86dga_1.0.2_iphoneos-arm.deb"> uk.qmole.libxxf86dga_1.0.2_iphoneos-arm.deb</a>
+            </li>
+            <li><a href="uk.qmole.libxxf86vm_1.0.2_iphoneos-arm.deb"> uk.qmole.libxxf86vm_1.0.2_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.lua_5.3.0_iphoneos-arm.deb"> uk.qmole.lua_5.3.0_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.makedepend_1.0.1_iphoneos-arm.deb"> uk.qmole.makedepend_1.0.1_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.makedepend_1.0.1_iphoneos-arm.deb"> uk.qmole.makedepend_1.0.1_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.maxima_5.29.1_iphoneos-arm.deb"> uk.qmole.maxima_5.29.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.mkfontdir_1.0.6_iphoneos-arm.deb"> uk.qmole.mkfontdir_1.0.6_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.mkfontscale_1.0.9_iphoneos-arm.deb"> uk.qmole.mkfontscale_1.0.9_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.mkfontscale_1.0.9_iphoneos-arm.deb"> uk.qmole.mkfontscale_1.0.9_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.netcat_1.10_iphoneos-arm.deb"> uk.qmole.netcat_1.10_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.netsurf_3.3_iphoneos-arm.deb"> uk.qmole.netsurf_3.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.nmap_4.76_iphoneos-arm.deb"> uk.qmole.nmap_4.76_iphoneos-arm.deb</a></li>
@@ -216,14 +287,16 @@
             <li><a href="uk.qmole.poppler_0.13.4_iphoneos-arm.deb"> uk.qmole.poppler_0.13.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.powerloom_4.0.9_iphoneos-arm.deb"> uk.qmole.powerloom_4.0.9_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.qmole_0.7_iphoneos-arm.deb"> uk.qmole.qmole_0.7_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.renderproto_0.11.1_iphoneos-arm.deb"> uk.qmole.renderproto_0.11.1_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.renderproto_0.11.1_iphoneos-arm.deb"> uk.qmole.renderproto_0.11.1_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.roxfiler_2.11.2_iphoneos-arm.deb"> uk.qmole.roxfiler_2.11.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.scala_2.6.1_iphoneos-arm.deb"> uk.qmole.scala_2.6.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.setxkbmap_1.0.4_iphoneos-arm.deb"> uk.qmole.setxkbmap_1.0.4_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.showfont_1.0.3_iphoneos-arm.deb"> uk.qmole.showfont_1.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.smproxy_1.0.2_iphoneos-arm.deb"> uk.qmole.smproxy_1.0.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.snort_2.9.7.6_iphoneos-arm.deb"> uk.qmole.snort_2.9.7.6_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.startupnotification_0.10_iphoneos-arm.deb"> uk.qmole.startupnotification_0.10_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.startupnotification_0.10_iphoneos-arm.deb">
+                    uk.qmole.startupnotification_0.10_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.stunnel_5.24_iphoneos-arm.deb"> uk.qmole.stunnel_5.24_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.tcl_8.5.19_iphoneos-arm.deb"> uk.qmole.tcl_8.5.19_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.tcpdump_4.7.4_iphoneos-arm.deb"> uk.qmole.tcpdump_4.7.4_iphoneos-arm.deb</a></li>
@@ -231,19 +304,23 @@
             <li><a href="uk.qmole.tkdiff_4.2_iphoneos-arm.deb"> uk.qmole.tkdiff_4.2_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.tree_1.5.3_iphoneos-arm.deb"> uk.qmole.tree_1.5.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.usrlocal_1.0_iphoneos-arm.deb"> uk.qmole.usrlocal_1.0_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.utilmacros_1.6.0_iphoneos-arm.deb"> uk.qmole.utilmacros_1.6.0_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.utilmacros_1.6.0_iphoneos-arm.deb"> uk.qmole.utilmacros_1.6.0_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.vtcl_8.6_iphoneos-arm.deb"> uk.qmole.vtcl_8.6_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.vte_0.29.1_iphoneos-arm.deb"> uk.qmole.vte_0.29.1_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.wv_1.2.9_iphoneos-arm.deb"> uk.qmole.wv_1.2.9_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.x11fonts75dpi_1.0_iphoneos-arm.deb"> uk.qmole.x11fonts75dpi_1.0_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.x11fonts75dpi_1.0_iphoneos-arm.deb"> uk.qmole.x11fonts75dpi_1.0_iphoneos-arm.deb</a>
+            </li>
             <li><a href="uk.qmole.x11fontsTTF_1.0_iphoneos-arm.deb"> uk.qmole.x11fontsTTF_1.0_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.x11fonts_1.0_iphoneos-arm.deb"> uk.qmole.x11fonts_1.0_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.x11perf_1.5_iphoneos-arm.deb"> uk.qmole.x11perf_1.5_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.x11r6_1.1.0_iphoneos-arm.deb"> uk.qmole.x11r6_1.1.0_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.xauth_1.0.3_iphoneos-arm.deb"> uk.qmole.xauth_1.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.xbitmaps_1.0.1_iphoneos-arm.deb"> uk.qmole.xbitmaps_1.0.1_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.xcursorgen_1.0.2_iphoneos-arm.deb"> uk.qmole.xcursorgen_1.0.2_iphoneos-arm.deb</a></li>
-            <li><a href="uk.qmole.xcursorthemes_1.0.3_iphoneos-arm.deb"> uk.qmole.xcursorthemes_1.0.3_iphoneos-arm.deb</a></li>
+            <li><a href="uk.qmole.xcursorgen_1.0.2_iphoneos-arm.deb"> uk.qmole.xcursorgen_1.0.2_iphoneos-arm.deb</a>
+            </li>
+            <li><a href="uk.qmole.xcursorthemes_1.0.3_iphoneos-arm.deb">
+                    uk.qmole.xcursorthemes_1.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.xdpyinfo_1.0.3_iphoneos-arm.deb"> uk.qmole.xdpyinfo_1.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.xev_1.0.3_iphoneos-arm.deb"> uk.qmole.xev_1.0.3_iphoneos-arm.deb</a></li>
             <li><a href="uk.qmole.xf86dga_1.0.2_iphoneos-arm.deb"> uk.qmole.xf86dga_1.0.2_iphoneos-arm.deb</a></li>
@@ -267,10 +344,20 @@
             <p>Copyright (C) 2024 <a href="//PJ568.sbs" target="_blank">PJ568</a></p>
             <a href="mailto:PJ568@PJ568.eu.org">Email | 电子邮件</a>
             <p class="gap-3">
-                <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.sbs"><img alt="Add to Cydia | 添加源至 Cydia" src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.sbs&up_message=QMole%20Linux&logo=apple&label=Add%20to%20Cydia&color=e48c5c" loading="lazy"></a>
-                <a href="https://github.com/PJ-568/qmole-source-site" target="_blank"><img alt="Github repo" src="https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2FPJ-568%2Fqmole-source-site&up_color=007bff&up_message=PJ-568/qmole-source-site&logo=github&label=Github" loading="lazy"></a>
-                <a href="https://github.com/PJ-568/qmole-source-site/blob/main/LICENSE" target="_blank"><img alt="GitHub License" src="https://img.shields.io/github/license/PJ-568/qmole-source-site?logo=github&color=007bff" loading="lazy"></a>
-                <a href="https://gitee.com/PJ-568/qmole-source-site" target="_blank"><img alt="Gitee repo" src="https://img.shields.io/website?url=https%3A%2F%2Fgitee.com%2FPJ-568%2Fqmole-source-site&up_color=007bff&up_message=PJ-568/qmole-source-site&logo=gitee&label=Gitee" loading="lazy"></a>
+                <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://qmole.pj568.sbs"><img
+                        alt="Add to Cydia | 添加源至 Cydia"
+                        src="https://img.shields.io/website?url=http%3A%2F%2Fqmole.pj568.sbs&up_message=QMole%20Linux&logo=apple&label=Add%20to%20Cydia&color=e48c5c"
+                        loading="lazy"></a>
+                <a href="https://github.com/PJ-568/qmole-source-site" target="_blank"><img alt="Github repo"
+                        src="https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2FPJ-568%2Fqmole-source-site&up_color=007bff&up_message=PJ-568/qmole-source-site&logo=github&label=Github"
+                        loading="lazy"></a>
+                <a href="https://github.com/PJ-568/qmole-source-site/blob/main/LICENSE" target="_blank"><img
+                        alt="GitHub License"
+                        src="https://img.shields.io/github/license/PJ-568/qmole-source-site?logo=github&color=007bff"
+                        loading="lazy"></a>
+                <a href="https://gitee.com/PJ-568/qmole-source-site" target="_blank"><img alt="Gitee repo"
+                        src="https://img.shields.io/website?url=https%3A%2F%2Fgitee.com%2FPJ-568%2Fqmole-source-site&up_color=007bff&up_message=PJ-568/qmole-source-site&logo=gitee&label=Gitee"
+                        loading="lazy"></a>
             </p>
             <a href="#">↑ Back to top | 返回页顶 ↑</a>
         </div>
@@ -278,6 +365,8 @@
     <div class="loading-bar">
         <div class="progress"></div>
     </div>
-    <script src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-y/instant.page/5.1.0/instantpage.min.js" type="text/javascript"></script>
+    <script src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-y/instant.page/5.1.0/instantpage.min.js"
+        type="text/javascript"></script>
 </body>
+
 </html>
