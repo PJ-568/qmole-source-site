@@ -21,7 +21,8 @@
                     "body h1",
                     "fake-window",
                     ".pjax-reload"
-                ]
+                ],
+                cacheBust: false
             });
         } catch (e) {
             console.log('PJAX 初始化出错：' + e);
