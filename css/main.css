@@ -50,10 +50,6 @@ hr {
     border: 1px solid #ddd;
 }
 
-li {
-    overflow: scroll;
-}
-
 .logo {
     border: 1px solid #ddd;
     display: block;
